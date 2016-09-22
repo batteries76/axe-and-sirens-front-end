@@ -1,4 +1,12 @@
 /* Master Styles */
+/*body {
+
+}*/
+
+.banner {
+  width: 100%;
+}
+
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
@@ -9,15 +17,46 @@ h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
-body {
-  margin: 2em;
-}
 body, input[text], button {
   color: #888;
   font-family: Cambria, Georgia;
+  margin: 0;
 }
 /* . . . */
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+.dashboard {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 70em;
+  background-color: red;
+  margin: 0 auto;
+  overflow: inherit;
+}
+
+.footer {
+  background-color: pink;
+  width: 100%;
+  min-height: 10px;
+}
+
+.footer #foot-note {
+  text-align: center;
+}
+
+/*@media(max-width: 70em){
+  .dashboard {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 70em;
+    background-color: red;
+    margin: 0 auto;
+    overflow: inherit;
+  }
+}*/
