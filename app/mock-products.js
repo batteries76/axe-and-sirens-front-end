@@ -9,6 +9,7 @@ exports.PRODUCTS = [
     { id: 17, name: 'Pink T-Shirt' },
     { id: 18, name: 'White T-Shirt' },
     { id: 19, name: 'Black T-Shirt' },
-    { id: 20, name: 'Orange T-Shirt' }
+    { id: 20, name: 'Orange T-Shirt' },
+    { id: 21, name: 'Tee T-Shirt' },
 ];
 //# sourceMappingURL=mock-products.js.map
