@@ -57,7 +57,7 @@ h4 {
   -webkit-align-items: center;
   align-items: center;
   width: 70em;
-  background-color: red;
+  /*background-color: red;*/
   margin: 0 auto;
   overflow: inherit;
   position: relative;
@@ -88,7 +88,7 @@ h4 {
     -webkit-justify-content: center;
     justify-content: center;
     width: 20em;
-    background-color: red;
+    /*background-color: red;*/
     margin: 0 auto;
     overflow: inherit;
   }
