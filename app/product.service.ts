@@ -1,13 +1,27 @@
-import { Injectable } from '@angular/core';
+import { Injectable }    from '@angular/core';
+import { Headers, Http } from '@angular/http';
 
-import { Product } from './product';
-import { PRODUCTS } from './mock-products';
+import 'rxjs/add/operator/toPromise';
+
+import { Product }       from './product';
 
 @Injectable()
 export class ProductService {
 
+  private productsUrl = 'http://localhost:4567/dashboard';  // URL to web api
+
+  constructor(private http: Http) { }
+
   getProducts(): Promise<Product[]> {
-    return Promise.resolve(PRODUCTS);
+    return this.http.get(this.productsUrl)
+               .toPromise()
+               .then(response => response.json().data as Product[])
+               .catch(this.handleError);
+  }
+
+  private handleError(error: any): Promise<any> {
+    console.error('An error occurred', error); // for demo purposes only
+    return Promise.reject(error.message || error);
   }
 
   getProduct(id: number): Promise<Product> {

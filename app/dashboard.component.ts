@@ -15,8 +15,8 @@ export class DashboardComponent implements OnInit {
   products: Product[] = [];
 
   constructor(
-  private router: Router,
-  private productService: ProductService
+    private router: Router,
+    private productService: ProductService
   ) { }
 
   ngOnInit(): void {

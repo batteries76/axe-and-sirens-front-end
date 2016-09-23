@@ -1,6 +1,7 @@
 import { NgModule }               from '@angular/core';
 import { BrowserModule }          from '@angular/platform-browser';
 import { FormsModule }            from '@angular/forms';
+import { HttpModule }             from '@angular/http';
 
 import { AppComponent }           from './app.component';
 
@@ -12,6 +13,7 @@ import { CustomComponent }        from './custom.component';
 import { FaqsComponent }          from './faqs.component';
 import { CheckoutComponent }      from './checkout.component';
 import { FooterComponent }        from './footer.component';
+import { ContactFormComponent }   from './contact-form.component'
 
 import { ProductService }         from './product.service';
 
@@ -21,6 +23,7 @@ import { routing }                from './app.routing';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     routing
   ],
   declarations: [
@@ -32,7 +35,8 @@ import { routing }                from './app.routing';
     CustomComponent,
     FaqsComponent,
     CheckoutComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
   ],
   providers: [
     ProductService
