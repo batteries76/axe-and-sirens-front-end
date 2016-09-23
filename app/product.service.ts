@@ -8,7 +8,7 @@ import { Product }       from './product';
 @Injectable()
 export class ProductService {
 
-  private productsUrl = 'http://localhost:4567/dashboard';  // URL to web api
+  private productsUrl = 'app/products';  // URL to web api
 
   constructor(private http: Http) { }
 

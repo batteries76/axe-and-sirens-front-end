@@ -5,6 +5,9 @@ import { HttpModule }             from '@angular/http';
 
 import { AppComponent }           from './app.component';
 
+import { InMemoryWebApiModule }   from 'angular2-in-memory-web-api';
+import { InMemoryDataService }    from './in-memory-data.service';
+
 import { ProductDetailComponent } from './product-detail.component';
 import { AboutComponent }         from './about.component';
 import { DashboardComponent }     from './dashboard.component';
@@ -17,6 +20,7 @@ import { ContactFormComponent }   from './contact-form.component'
 
 import { ProductService }         from './product.service';
 
+
 import { routing }                from './app.routing';
 
 @NgModule({
@@ -25,6 +29,7 @@ import { routing }                from './app.routing';
     FormsModule,
     HttpModule,
     routing
+    InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   declarations: [
     AppComponent,
