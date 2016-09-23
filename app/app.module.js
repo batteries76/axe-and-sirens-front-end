@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
 var product_detail_component_1 = require('./product-detail.component');
 var about_component_1 = require('./about.component');
@@ -20,6 +21,7 @@ var custom_component_1 = require('./custom.component');
 var faqs_component_1 = require('./faqs.component');
 var checkout_component_1 = require('./checkout.component');
 var footer_component_1 = require('./footer.component');
+var contact_form_component_1 = require('./contact-form.component');
 var product_service_1 = require('./product.service');
 var app_routing_1 = require('./app.routing');
 var AppModule = (function () {
@@ -30,6 +32,7 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
+                http_1.HttpModule,
                 app_routing_1.routing
             ],
             declarations: [
@@ -41,7 +44,8 @@ var AppModule = (function () {
                 custom_component_1.CustomComponent,
                 faqs_component_1.FaqsComponent,
                 checkout_component_1.CheckoutComponent,
-                footer_component_1.FooterComponent
+                footer_component_1.FooterComponent,
+                contact_form_component_1.ContactFormComponent
             ],
             providers: [
                 product_service_1.ProductService
