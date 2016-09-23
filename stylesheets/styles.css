@@ -23,7 +23,7 @@ h2, h3 {
   top: 2em;
   text-align: center;
   font-size: 3em;
-  color: red;
+  color: darkslategrey;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
@@ -67,21 +67,37 @@ h4 {
 .footer {
   /*position: absolute;
   bottom: 0;*/
+  color: slategrey;
   top: 80px;
   position: relative;
   bottom: 0;
   display: block;
-  background-color: pink;
+  background-color: bisque;
   width: 100%;
   min-height: 10px;
+  margin: 2em;
 }
 
 .footer #foot-note {
   display: block;
   text-align: center;
+  padding: 1em;
 }
 
 @media(max-width: 70em){
+  .dashboard {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 47em;
+    /*background-color: red;*/
+    margin: 0 auto;
+    overflow: inherit;
+  }
+}
+
+@media(max-width: 37em){
   .dashboard {
     display: -webkit-flex;
     display: flex;

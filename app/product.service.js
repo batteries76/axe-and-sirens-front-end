@@ -14,7 +14,7 @@ require('rxjs/add/operator/toPromise');
 var ProductService = (function () {
     function ProductService(http) {
         this.http = http;
-        this.productsUrl = 'http://localhost:4567/dashboard'; // URL to web api
+        this.productsUrl = 'app/products'; // URL to web api
     }
     ProductService.prototype.getProducts = function () {
         return this.http.get(this.productsUrl)
