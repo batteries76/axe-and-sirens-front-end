@@ -1,4 +1,14 @@
 /* Master Styles */
+.customed-title {
+  /*background-color: red;
+  width: 300px;
+  height: 30px;
+  position:fixed;
+  left: 100px;
+  text-align: center;*/
+
+}
+
 /*body {
 
 }*/
@@ -127,14 +137,13 @@
   vertical-align: top;
 }*/
 
-@media(max-width: 70em){
+/*@media(max-width: 70em){
   .dashboard {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
     width: 47em;
-    /*background-color: red;*/
     margin: 0 auto;
     overflow: inherit;
   }
@@ -147,8 +156,7 @@
     -webkit-justify-content: center;
     justify-content: center;
     width: 20em;
-    /*background-color: red;*/
     margin: 0 auto;
     overflow: inherit;
   }
-}
+}*/
