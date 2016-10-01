@@ -3,20 +3,24 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
-    <img class="banner" src="http://placehold.it/850x300">
-    <h1 class="front-component">{{title}}</h1>
+
+    <h1>{{title}}</h1>
     <nav>
-      <a routerLink="/dashboard" routerLinkActive="active">Products</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-      <a routerLink="/checkout" routerLinkActive="active">Checkout</a>
-      <a routerLink="/faqs" routerLinkActive="active">FAQs</a>
-      <a routerLink="/custom" routerLinkActive="active">Custom</a>
+      <div class="nav-wrapper blue-grey lighten-1">
+        <ul>
+          <li><a routerLink="/dashboard" routerLinkActive="active">Products</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+          <li><a routerLink="/checkout" routerLinkActive="active">Checkout</a></li>
+          <li><a routerLink="/faqs" routerLinkActive="active">FAQs</a></li>
+          <li><a routerLink="/custom" routerLinkActive="active">Custom</a></li>
+        </ul>
+      </div>
     </nav>
-    <router-outlet class="front-component"></router-outlet>
+    <router-outlet></router-outlet>
     <my-footer></my-footer>
   `,
-  styleUrls: ['app/app.component.css']
+  // styleUrls: ['app/app.component.css']
 })
 export class AppComponent {
   title = 'Axe and Sirens';

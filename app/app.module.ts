@@ -28,7 +28,7 @@ import { routing }                from './app.routing';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
     InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   declarations: [
