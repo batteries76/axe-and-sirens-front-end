@@ -1,13 +1,26 @@
-<div>
-  <div class="contact-form">
-    <!-- <label>name: </label> -->
-    <input type="string" placeholder="name" class="contact-name-email">
-    <!-- <label>email: </label> -->
-    <input type="email" placeholder="email" class="contact-name-email">
-    <!-- <label>message: </label> -->
-    <input type="text" placeholder="message" class="contact-message">
-    <button class="contact-button" (click)="save()">Save</button>
-    <button class="contact-button" (click)="goBack()">Back</button>
-  </div>
-
-</div>
+<div class="row">
+  <form class="col s12">
+    <!-- first row for name and telephone -->
+    <div class="row">
+      <div class="input-field col s6">
+        <input type="text" class="validate">
+        <label for="icon_prefix">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input type="email" class="validate">
+        <label for="icon_telephone">Telephone</label>
+      </div>
+    </div>
+    <!-- second row for text area -->
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Textarea</label>
+      </div>
+    </div>
+    <!-- submit button -->
+    <div class="row">
+      <a class="right btn-floating btn-large waves-effect waves-light red"><i class="material-icons">mode_edit</i></a>
+    </div>
+  </form>
+ </div>
