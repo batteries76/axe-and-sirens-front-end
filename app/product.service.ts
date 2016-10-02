@@ -8,14 +8,16 @@ import { Product }       from './product';
 @Injectable()
 export class ProductService {
 
-  private productsUrl = 'app/products';  // URL to web api
+  private productsUrl = 'http://localhost:4567/dashboard';  // URL to web api
 
   constructor(private http: Http) { }
 
   getProducts(): Promise<Product[]> {
     return this.http.get(this.productsUrl)
                .toPromise()
-               .then(response => response.json().data as Product[])
+               .then(function(response) {
+                 return response.json()
+               })
                .catch(this.handleError);
   }
 

@@ -13,8 +13,8 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
-var angular2_in_memory_web_api_1 = require('angular2-in-memory-web-api');
-var in_memory_data_service_1 = require('./in-memory-data.service');
+//import { InMemoryWebApiModule }   from 'angular2-in-memory-web-api';
+//import { InMemoryDataService }    from './in-memory-data.service';
 var product_detail_component_1 = require('./product-detail.component');
 var about_component_1 = require('./about.component');
 var dashboard_component_1 = require('./dashboard.component');
@@ -36,7 +36,6 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 http_1.HttpModule,
                 app_routing_1.routing,
-                angular2_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService)
             ],
             declarations: [
                 app_component_1.AppComponent,

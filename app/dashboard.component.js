@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var product_service_1 = require('./product.service');
 var DashboardComponent = (function () {
+    //  prods: <Product[]>;
     function DashboardComponent(router, productService) {
         this.router = router;
         this.productService = productService;
@@ -19,8 +20,12 @@ var DashboardComponent = (function () {
     }
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
+        //    debugger;
         this.productService.getProducts()
-            .then(function (products) { return _this.products = products; });
+            .then(function (productsResponseData) {
+            _this.products = productsResponseData;
+            console.log(_this.products);
+        });
     };
     DashboardComponent.prototype.gotoDetail = function (product) {
         var link = ['/detail', product.id];
