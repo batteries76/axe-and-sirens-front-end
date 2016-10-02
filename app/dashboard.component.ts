@@ -13,6 +13,7 @@ import { ProductService }    from './product.service';
 export class DashboardComponent implements OnInit {
 
   products: Product[] = [];
+//  prods: <Product[]>;
 
   constructor(
     private router: Router,
@@ -20,8 +21,13 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+//    debugger;
     this.productService.getProducts()
-      .then(products => this.products = products);
+      .then(productsResponseData => {
+        this.products = productsResponseData;
+        console.log(this.products)
+      });
+
   }
 
   gotoDetail(product: Product): void {
