@@ -4,7 +4,8 @@
     <div class="row">
       <div *ngFor="let product of products" (click)="gotoDetail(product)" class="col l4 m6 s12" style="margin-top: 30px;">
         <img class="z-depth-2" src="http://placehold.it/300x400">
-        <span class="btn-large">{{product.name}}</span>
+        <span class="btn-large right">{{product.name}}</span>
+        <!-- <span class="btn-large btn-floating">Price</span> -->
       </div>
     </div>
 
