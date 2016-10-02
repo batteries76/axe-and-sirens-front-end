@@ -16,8 +16,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <img class=\"banner\" src=\"http://placehold.it/850x300\">\n    <h1 class=\"front-component\">{{title}}</h1>\n    <nav>\n      <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Products</a>\n      <a routerLink=\"/about\" routerLinkActive=\"active\">About</a>\n      <a routerLink=\"/contact\" routerLinkActive=\"active\">Contact</a>\n      <a routerLink=\"/checkout\" routerLinkActive=\"active\">Checkout</a>\n      <a routerLink=\"/faqs\" routerLinkActive=\"active\">FAQs</a>\n      <a routerLink=\"/custom\" routerLinkActive=\"active\">Custom</a>\n    </nav>\n    <router-outlet class=\"front-component\"></router-outlet>\n    <my-footer></my-footer>\n  ",
-            styleUrls: ['app/app.component.css']
+            template: "\n\n    <h1>{{title}}</h1>\n    <nav class=\"hide-on-small-only\">\n      <div class=\"nav-wrapper blue-grey lighten-1\">\n        <div class=\"container\">\n          <ul>\n            <li><a routerLink=\"/dashboard\" routerLinkActive=\"active\">Products</a></li>\n            <li><a routerLink=\"/about\" routerLinkActive=\"active\">About</a></li>\n            <li><a routerLink=\"/contact\" routerLinkActive=\"active\">Contact</a></li>\n            <li><a routerLink=\"/checkout\" routerLinkActive=\"active\">Checkout</a></li>\n            <li><a routerLink=\"/faqs\" routerLinkActive=\"active\">FAQs</a></li>\n            <li><a routerLink=\"/custom\" routerLinkActive=\"active\">Custom</a></li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n\n    <router-outlet></router-outlet>\n    <my-footer></my-footer>\n  ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

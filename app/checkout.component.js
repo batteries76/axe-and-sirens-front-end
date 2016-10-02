@@ -16,7 +16,6 @@ var CheckoutComponent = (function () {
         core_1.Component({
             selector: 'my-checkout',
             templateUrl: 'app/checkout.component.html',
-            styleUrls: ['app/about.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], CheckoutComponent);
